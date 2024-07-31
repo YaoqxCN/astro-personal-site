@@ -54,4 +54,11 @@ export const socialIcons = [
     title: "BiliBili",
     svg: "bilibili",
   },
+  {
+    href: "/support",
+    ariaLabel: "Support",
+    title: "Support me",
+    svg: "support",
+    target: "_self",
+  },
 ];
