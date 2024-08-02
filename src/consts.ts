@@ -2,6 +2,7 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 // Site title and description
+export const SITE_TAB = "Yaoqx";
 export const SITE_TITLE = "Yaoqx 💤";
 export const SITE_DESCRIPTION = "Yaoqx 的个人主页";
 export const DATE_FORMAT = "YYYY-MM-DD";
@@ -125,4 +126,5 @@ export const categoriesInfo = [
   { title: "技术", desc: "科技与狠活", target: "_self" },
   { title: "生活", desc: "生活中的有感而发", target: "_self" },
   { title: "学习", desc: "知识就是力量", target: "_self" },
+  { title: "教程", desc: "授人以渔", target: "_self" },
 ];

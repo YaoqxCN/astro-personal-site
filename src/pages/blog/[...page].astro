@@ -49,7 +49,7 @@ const pageLinks = generatePageLinks(totalPages);
       uiOptions={{ showImages: false }}
     />
   </BaseCard>
-  <div class="mt-8">
+  <div class="mt-8 mb-8">
     {
       page.data.map((post: Post) => (
         <EnvelopeCard
@@ -66,7 +66,6 @@ const pageLinks = generatePageLinks(totalPages);
       ))
     }
   </div>
-  <br />
   <div class="flex justify-between mb-8">
     <a
       href={page.url.prev ? page.url.prev : `javascript:`}
