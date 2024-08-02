@@ -19,6 +19,9 @@ export const infoTest = {
   tag: "标签：",
   noTag: "无标签",
   tagPage: "标签：",
+  noCategory: "其他",
+  categoriesPage: "📑分类",
+  categoryPage: "分类：",
   link: "链接: ",
   prevPage: "上一页",
   nextPage: "下一页",
@@ -26,11 +29,66 @@ export const infoTest = {
 
 // Menu items for navigation
 export const menuItems = [
-  { id: "home", text: "主页", href: "/", svg: "home" }, // Home page
-  { id: "about", text: "关于", href: "/about", svg: "about" }, // About page
-  { id: "blog", text: "博客", href: "/blog", svg: "blog" }, // Blog page
-  { id: "project", text: "作品", href: "/project", svg: "project" }, // Projects page
-  { id: "friend", text: "友情链接", href: "/friend", svg: "friend" }, // Friends page
+  { id: "home", text: "主页", href: "/", svg: "home", target: "_self" }, // Home page
+  { id: "about", text: "关于", href: "/about", svg: "about", target: "_self" }, // About page
+  {
+    id: "blog",
+    text: "博客",
+    href: "/blog",
+    svg: "blog",
+    target: "_self",
+    subItems: [
+      {
+        id: "all",
+        text: "全部",
+        href: "/blog",
+        svg: "post",
+        target: "_self",
+      }, // All blog
+      {
+        id: "tech",
+        text: "技术",
+        href: "/blog/categories/技术",
+        svg: "heart",
+        target: "_self",
+      }, // Technology category
+      {
+        id: "study",
+        text: "学习",
+        href: "/blog/categories/学习",
+        svg: "book",
+        target: "_self",
+      }, // Study category
+      {
+        id: "life",
+        text: "生活",
+        href: "/blog/categories/生活",
+        svg: "cube",
+        target: "_self",
+      }, // Life category
+    ],
+  }, // Blog page with sub-items
+  {
+    id: "categories",
+    text: "分类",
+    href: "/blog/categories",
+    svg: "categories",
+    target: "_self",
+  }, // All categories
+  {
+    id: "project",
+    text: "项目",
+    href: "/project",
+    svg: "project",
+    target: "_self",
+  }, // Projects page
+  {
+    id: "friend",
+    text: "友情链接",
+    href: "/friend",
+    svg: "friend",
+    target: "_self",
+  }, // Friends page
   {
     id: "contact",
     text: "邮箱",
@@ -61,4 +119,10 @@ export const socialIcons = [
     svg: "support",
     target: "_self",
   },
+];
+// Category Information
+export const categoriesInfo = [
+  { title: "技术", desc: "科技与狠活", target: "_self" },
+  { title: "生活", desc: "生活中的有感而发", target: "_self" },
+  { title: "学习", desc: "知识就是力量", target: "_self" },
 ];
