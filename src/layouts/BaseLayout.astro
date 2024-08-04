@@ -17,7 +17,7 @@ const { title, image, includeSidebar = true } = Astro.props;
 
 <html lang="zh-cn" class="bg-base-300">
   <title class="sr-only">{`${SITE_TAB} - ${title}`}</title>
-
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="9a30c285-80e8-48cc-b24e-433baefcb9d3"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} image={image} />
   {TRANSITION_API && <ViewTransitions />}
