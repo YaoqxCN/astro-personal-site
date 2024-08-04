@@ -5,7 +5,6 @@ pubDate: 2024 7 7
 image: "https://s21.ax1x.com/2024/08/01/pkXKn8e.webp"
 categories:
   - 技术
-  - 教程
 tags:
   - Python
   - AI
