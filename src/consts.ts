@@ -126,4 +126,5 @@ export const categoriesInfo = [
   { title: "技术", desc: "科技与狠活", target: "_self" },
   { title: "生活", desc: "生活中的有感而发", target: "_self" },
   { title: "学习", desc: "知识就是力量", target: "_self" },
+  { title: "笔记", desc: "记录自己的学习足迹", target: "_self" },
 ];
