@@ -19,9 +19,10 @@ export const TRANSITION_API = true;
 export const infoTest = {
   tag: "标签：",
   noTag: "无标签",
+  tagCard: "标签",
   tagPage: "标签：",
   noCategory: "其他",
-  categoriesPage: "📑分类",
+  categoryCard: "分类",
   categoryPage: "分类：",
   link: "链接: ",
   prevPage: "上一页",
@@ -70,13 +71,6 @@ export const menuItems = [
     ],
   }, // Blog page with sub-items
   {
-    id: "categories",
-    text: "分类",
-    href: "/blog/categories",
-    svg: "categories",
-    target: "_self",
-  }, // All categories
-  {
     id: "project",
     text: "项目",
     href: "/project",
@@ -120,11 +114,4 @@ export const socialIcons = [
     svg: "support",
     target: "_self",
   },
-];
-// Category Information
-export const categoriesInfo = [
-  { title: "技术", desc: "科技与狠活", target: "_self" },
-  { title: "生活", desc: "生活中的有感而发", target: "_self" },
-  { title: "学习", desc: "知识就是力量", target: "_self" },
-  { title: "笔记", desc: "记录自己的学习足迹", target: "_self" },
 ];

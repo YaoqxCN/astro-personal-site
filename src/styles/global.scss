@@ -6,6 +6,10 @@ html {
   @apply scroll-smooth;
 }
 
+.no-card {
+  border-radius: var(--rounded-box, 1rem);
+}
+
 .link-card a,
 a {
   @apply relative no-underline;
@@ -17,9 +21,14 @@ a {
 
 .main-card p a,
 .main-card li a {
-  color: oklch(var(--p));
   @apply underline;
 }
+
+.main-card p a:hover,
+.main-card li a:hover {
+  color: oklch(var(--p));
+}
+
 
 .alert,
 .collapse,
@@ -63,12 +72,6 @@ body {
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-}
-
-p,
-ol,
-ul {
-  @apply my-2 leading-normal;
 }
 
 ol {
@@ -133,6 +136,7 @@ em {
 
 table {
   @apply border-collapse my-2;
+  table-layout: fixed
 }
 
 table tr {
@@ -161,9 +165,9 @@ pre>code {
 hr {
   border: 0;
   display: flex;
-  color: oklch(var(--bc));
+  color: rgb(207, 207, 207);
   background: linear-gradient(currentColor, currentColor) no-repeat center;
-  background-size: calc(100% - 1.5em - 6px) 1px;
+  background-size: 100% 1px;
   justify-content: space-between;
   height: 50px;
 }
@@ -226,4 +230,24 @@ thead th {
 
 .menu-item summary::after{
   position: absolute;
+}
+
+.main-card p,
+.main-card ol,
+.main-card ul,
+.main-card li,
+.timeline-box {
+  @apply my-2 leading-normal;
+}
+
+.timeline{
+  @applt pl-0;
+}
+
+.timeline li {
+  @apply my-0 leading-none;
+}
+
+.footnotes{
+  @apply alert;
 }
