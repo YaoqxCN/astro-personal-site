@@ -86,9 +86,8 @@ export const menuItems = [
   }, // Friends page
   {
     id: "contact",
-    text: "邮箱",
-    href: "mailto:1064245198@qq.com", // Contact email
-    target: "_blank", // Open in a new tab
+    text: "邮件",
+    href: "mailto:1064245198@qq.com",
     svg: "contact",
   },
 ];
@@ -114,4 +113,10 @@ export const socialIcons = [
     svg: "support",
     target: "_self",
   },
+  {
+    href: "/rss.xml",
+    ariaLabel: "RSS",
+    title: "RSS",
+    svg: "rss",
+  }
 ];
