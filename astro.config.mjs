@@ -10,7 +10,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.saroprock.com',
+  site: 'https://yaoqx.pages.dev/',
   style: {
     scss: {
       includePaths: ['./src/styles']
